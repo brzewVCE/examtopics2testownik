@@ -2,10 +2,8 @@ from bs4 import BeautifulSoup
 import json
 
 
-# Path to the HTML file
-file_path = 'D:/Buena/Cert1/0.html'
 # Sample HTML content as a string (substitute this with your actual HTML file content)
-with open(file_path, 'r', encoding='utf-8') as file:
+with open('0.html', 'r', encoding='utf-8') as file:
     html_content = file.read()
 
 # Parse the HTML content
@@ -48,16 +46,23 @@ for card in question_cards:
     extracted_data.append(question_data)
 
 txt_index = 0
-# Output extracted data
-for question in extracted_data:
-    string = question['Text']+'\n'+str(question['Choices'])+'\n\n'
-    with open(f'{txt_index}.txt', 'a') as f:
-        json.dump(extracted_data, f, indent=4)
-    #print(question['Text'])
-    print(question['Choices'])
-    print()
 
-# Optionally, you can save this data to a JSON file
-import json
-with open('extracted_questions.json', 'w') as f:
-    json.dump(extracted_data, f, indent=4)
+answer_map = {
+        'A': '1000',
+        'B': '0100',
+        'C': '0010',
+        'D': '0001'
+    }
+
+
+
+for question in extracted_data:
+    #Match the correct answer to the answer map
+    testownik_header = "X" + str(answer_map[question['Correct Answer']])
+    with open(f'{txt_index}.txt', 'w', encoding='utf-8') as file:
+        file.write(testownik_header + '\n')
+        file.write(question['Text'] + '\n')  # Write the question text
+        for choice in question['Choices']:
+            file.write(choice + '\n')  # Write each choice on a new line
+    txt_index += 1
+
