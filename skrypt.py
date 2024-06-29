@@ -3,7 +3,7 @@ import json
 
 
 # Sample HTML content as a string (substitute this with your actual HTML file content)
-with open('0.html', 'r', encoding='utf-8') as file:
+with open('./html/54.html', 'r', encoding='utf-8') as file:
     html_content = file.read()
 
 # Parse the HTML content
@@ -66,3 +66,4 @@ for question in extracted_data:
             file.write(choice + '\n')  # Write each choice on a new line
     txt_index += 1
 
+#TODO: Check if file has answers
