@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import json
 
+#TODO - Add a loop to iterate over all html files in the html folder
 
 # Sample HTML content as a string (substitute this with your actual HTML file content)
 with open('./html/1.html', 'r', encoding='utf-8') as file:
