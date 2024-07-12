@@ -1,0 +1,6 @@
+X0001
+You are using multiple configurations for gcloud. You want to review the configured Kubernetes Engine cluster of an inactive configuration using the fewest possible steps. What should you do?
+Use gcloud config configurations describe to review the output.
+Use gcloud config configurations activate and gcloud config list to review the output.
+Use kubectl config get-contexts to review the output.
+Use kubectl config use-context and kubectl config view to review the output.

@@ -1,0 +1,6 @@
+X0100
+You need to create a custom VPC with a single subnet. The subnet's range must be as large as possible. Which range should you use?
+0.0.0.0/0
+10.0.0.0/8
+172.16.0.0/12
+192.168.0.0/16
