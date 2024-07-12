@@ -3,7 +3,7 @@ import json
 
 
 # Sample HTML content as a string (substitute this with your actual HTML file content)
-with open('./html/54.html', 'r', encoding='utf-8') as file:
+with open('./html/1.html', 'r', encoding='utf-8') as file:
     html_content = file.read()
 
 # Parse the HTML content
@@ -36,11 +36,12 @@ for card in question_cards:
         choices.append(f"{choice_text[2:]}")
     question_data['Choices'] = choices
     
-    # Extract the correct answer (from hidden correct-answer span)
-    correct_answer_tag = card.find("span", class_="correct-answer")
-    if correct_answer_tag:
-        question_data['Correct Answer'] = correct_answer_tag.get_text(strip=True)
-    
+    # Extract the community answer (from the JSON data)
+    script_tag = card.find("script", type="application/json")
+    if script_tag:
+        voted_answers = json.loads(script_tag.string)
+        most_voted_answer = max(voted_answers, key=lambda x: x['vote_count'])['voted_answers']
+        question_data['Community Answer'] = most_voted_answer
     
     # Add this question's data to the overall list
     extracted_data.append(question_data)
@@ -48,22 +49,20 @@ for card in question_cards:
 txt_index = 0
 
 answer_map = {
-        'A': '1000',
-        'B': '0100',
-        'C': '0010',
-        'D': '0001'
+        'A': 'X1000',
+        'B': 'X0100',
+        'C': 'X0010',
+        'D': 'X0001'
     }
 
 
 
 for question in extracted_data:
     #Match the correct answer to the answer map
-    testownik_header = "X" + str(answer_map[question['Correct Answer']])
-    with open(f'{txt_index}.txt', 'w', encoding='utf-8') as file:
+    testownik_header = str(answer_map[question['Community Answer']])
+    with open(f'./testo/{txt_index}.txt', 'w', encoding='utf-8') as file:
         file.write(testownik_header + '\n')
         file.write(question['Text'] + '\n')  # Write the question text
         for choice in question['Choices']:
             file.write(choice + '\n')  # Write each choice on a new line
     txt_index += 1
-
-#TODO: Check if file has answers
