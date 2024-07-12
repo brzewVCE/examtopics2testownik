@@ -1,0 +1,6 @@
+X0100
+You create a new Google Kubernetes Engine (GKE) cluster and want to make sure that it always runs a supported and stable version of Kubernetes. What should you do?
+Enable the Node Auto-Repair feature for your GKE cluster.
+Enable the Node Auto-Upgrades feature for your GKE cluster.
+Select the latest available cluster version for your GKE cluster.
+Select ג€Container-Optimized OS (cos)ג€ as a node image for your GKE cluster.

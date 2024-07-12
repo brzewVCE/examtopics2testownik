@@ -1,0 +1,6 @@
+X1000
+You have sensitive data stored in three Cloud Storage buckets and have enabled data access logging. You want to verify activities for a particular user for these buckets, using the fewest possible steps. You need to verify the addition of metadata labels and which files have been viewed from those buckets. What should you do?
+Using the GCP Console, filter the Activity log to view the information.
+Using the GCP Console, filter the Stackdriver log to view the information.
+View the bucket in the Storage section of the GCP Console.
+Create a trace in Stackdriver to view the information.
