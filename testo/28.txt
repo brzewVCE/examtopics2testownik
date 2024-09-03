@@ -1,6 +1,0 @@
-X0100
-You are the project owner of a GCP project and want to delegate control to colleagues to manage buckets and files in Cloud Storage. You want to follow Google- recommended practices. Which IAM roles should you grant your colleagues?
-Project Editor
-Storage Admin
-Storage Object Admin
-Storage Object Creator

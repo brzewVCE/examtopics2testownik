@@ -1,6 +1,0 @@
-X1000
-You are deploying an application to a Compute Engine VM in a managed instance group. The application must be running at all times, but only a single instance of the VM should run per GCP project. How should you configure the instance group?
-Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 1.
-Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 1.
-Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 2.
-Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 2.
