@@ -1,7 +1,9 @@
 # Script to scrape data from examtopics into Testownik format
 
 ## 1: Get questions from examtopic site
-- Add ```view-source:``` before site address and press Enter
+- Add ```view-source:``` before site address and press Enter.
+- Note: You can easily cycle between pages from this point on by changing the page index at the end
+### IMPORTANT!
 - Right click > Save as **select file format as HTML ONLY, other options WILL NOT WORK**
 - Save it to html directory
 - Repeat if necessary
