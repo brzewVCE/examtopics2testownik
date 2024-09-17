@@ -1,0 +1,6 @@
+X0100
+Your company has a broad, granular IT administration team, and you are in charge of ensuring proper administrative control. One of those teams, the security team, requires access to the Security Investigation Tool. What should you do?
+Assign the pre-built security admin role to the security team members.
+Create a Custom Admin Role with the Security Center privileges, and then assign the role to each of the security team members.
+Assign the Super Admin Role to the security team members.
+Create a Custom Admin Role with the security settings privilege, and then assign the role to each of the security team members.

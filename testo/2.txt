@@ -1,0 +1,7 @@
+X00101
+Your marketing department needs an easy way for users to share items more appropriately. They want to easily link-share Drive files within the marketing department, without sharing them with your entire company. What should you do to fulfil this request? (Choose two.)
+Create a shared drive that's shared internally organization-wide.
+Update Drive sharing for the marketing department to restrict to internal.
+Create a shared drive for internal marketing use.
+Update the link sharing default to the marketing team when creating a document.
+In the admin panel Drive settings, create a target audience that has all of marketing as members.
