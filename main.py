@@ -12,7 +12,7 @@ os.makedirs(output_folder, exist_ok=True)
 
 # Iterate over all HTML files in the specified folder
 for filename in os.listdir(html_folder):
-    if filename.endswith('.html'):
+    if filename.endswith('.html') or filename.endswith('.htm'):
         file_path = os.path.join(html_folder, filename)
         
         with open(file_path, 'r', encoding='utf-8') as file:
