@@ -1,6 +1,0 @@
-X1000
-As the Workspace Administrator, you have been asked to configure Google Cloud Directory Sync (GCDS) in order to manage Google Group memberships from an internal LDAP server. However, multiple Google Groups must have their memberships managed manually. When you run the GCDS sync, you notice that these manually managed groups are being deleted. What should you do to prevent these groups from being deleted?
-In the GCDS configuration manager, update the group deletion policy setting to “don't delete Google groups not found in LDAP.”
-Use the Directory API to check and update the group’s membership after the GCDS sync is completed.
-Confirm that the base DN for the group email address attribute matches the base DN for the user email address attribute.
-In the user attribute settings of the GCDS configuration manager options, set the Google domain users deletion/suspension policy to “delete only active Google domain users not found in LDAP.”

@@ -47,11 +47,15 @@ for filename in os.listdir(html_folder):
                 # Find all answer choices
                 answers = card.find_all("li", class_="multi-choice-item")
                 choices = []
+                choices_letters = []
                 for answer in answers:
                     choice_letter = answer.find("span", class_="multi-choice-letter").get_text(strip=True)
                     choice_text = answer.get_text(strip=True)
                     choices.append(f"{choice_text[2:]}")
+                    choices_letters.append(f"{choice_text[0]}")
                 question_data['Choices'] = choices
+                print(choices)
+                print(choices_letters)
                 
                 # Extract the community answer (from the JSON data)
                 script_tag = card.find("script", type="application/json")

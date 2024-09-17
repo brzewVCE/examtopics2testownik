@@ -1,6 +1,0 @@
-X1000
-Your organization has a new security requirement around data exfiltration on iOS devices. You have a requirement to prevent users from copying content from a Google app (Gmail, Drive, Docs, Sheets, and Slides) in their work account to a Google app in their personal account or a third-party app. What steps should you take from the admin panel to prevent users from copying data from work to non-work apps on iOS devices?
-Navigate to “Data Protection” setting in Google Admin Console's Device management section and disable the “Allow users to copy data to personal apps” checkbox.
-Disable “Open Docs in Unmanaged Apps” setting in Google Admin Console’s Device management section.
-Navigate to Devices > Mobile and endpoints > Universal Settings > General and turn on Basic Mobile Management.
-Clear the “Allow items created with managed apps to open in unmanaged apps” checkbox.
