@@ -2,7 +2,7 @@
 
 ## 1: Get questions from examtopic site
 - Add ```view-source:``` before site address and press Enter
-- Right click and **select file format as HTML ONLY, other options WILL NOT WORK**
+- Right click > Save as **select file format as HTML ONLY, other options WILL NOT WORK**
 - Save it to html directory
 - Repeat if necessary
 
