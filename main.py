@@ -59,8 +59,9 @@ def main():
                     
                     # Extract the community answer (from the JSON data)
                     script_tag = card.find("script", type="application/json")
-                    if script_tag:
-                        voted_answers = json.loads(script_tag.string)
+                    
+                    voted_answers = json.loads(script_tag.string)
+                    if voted_answers:
                         most_voted_answer = max(voted_answers, key=lambda x: x['vote_count'])['voted_answers']
                         correct_answers = most_voted_answer
                     else:
